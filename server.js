@@ -2,7 +2,6 @@ const express = require("express");
 require("dotenv").config();
 const xss = require("xss-clean")
 const rateLimit = require("express-rate-limit")
-const helmet = require("helmet")
 
 const globalErrorHandler = require("./controllers/errorController");
 const blogRoutes = require("./routes/blogRoutes");
@@ -22,8 +21,6 @@ const limiter = rateLimit({
     windowMs: 60 * 60 * 1000,
     message: 'TOO many requests from this IP, Please try again in a hour!!'
 }); // LIMITING IP requests form one users
-// Set security HTTP headers
-app.use(helmet());
 
 app.get('/', (req, res) => {
     res.send('API is running..')
