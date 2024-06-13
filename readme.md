@@ -58,11 +58,13 @@ npm install
 
 Create a .env file in the root directory and add the following environment variables:
 
+```
 FIREBASE_PROJECT_ID=<your-firebase-project-id>
 FIREBASE_PRIVATE_KEY=<your-firebase-private-key>
 FIREBASE_CLIENT_EMAIL=<your-firebase-client-email>
 JWT_SECRET=<your-jwt-secret>
 PORT=3000
+```
 
 Running the API
 Start the development server:
@@ -88,7 +90,8 @@ Body Parameters:
 > > "username": "string",
 > > "password": "string"
 > > }
-> > ![Signup Page](/assests/images/signup.png)
+
+![Signup Page](/assests/images/signup.png)
 
 ### Login
 
@@ -101,7 +104,8 @@ Description: Logs in a user and returns a JWT.
 > > "username": "string",
 > > "password": "string"
 > > }
-> > ![Login Page](/assests/images/login.png)
+
+![Login Page](/assests/images/login.png)
 
 ### Logout
 
@@ -113,7 +117,8 @@ Description: Logs out a user and blacklist a JWT.
 >
 > > "message": "succesfully loggedout"
 > > }
-> > ![Logout Page](/assests/images/logout.png)
+
+![Logout Page](/assests/images/logout.png)
 
 ### Delete user
 
@@ -140,13 +145,15 @@ Headers:
 > > "title": "string",
 > > "content": "string"
 > > }
-> > ![create blog](/assests/images/createblog.png)
+
+![create blog](/assests/images/createblog.png)
 
 ### Get All Posts
 
 URL: `/blogapi/v1/blog`
 Method: `GET`
 Description: Retrieves all blog posts.
+
 ![Get all blogs](/assests/images/getallblogs.png)
 
 ### Get Post by ID
@@ -160,7 +167,8 @@ Headers:
 >
 > > "Authorization": "Bearer <token>"
 > > }
-> > ![get blog by id](/assests/images/blogbyid.png)
+
+![get blog by id](/assests/images/blogbyid.png)
 
 ### Update Post
 
@@ -173,14 +181,14 @@ Headers:
 >
 > > "Authorization": "Bearer <token>"
 > > }
-> > Body Parameters:
 
 > {
 >
 > > "title": "string",
 > > "content": "string"
 > > }
-> > ![update blog](/assests/images/updateblog.png)
+
+![update blog](/assests/images/updateblog.png)
 
 ### Delete Post
 
@@ -193,7 +201,8 @@ Headers:
 >
 > > "Authorization": "Bearer <token>"
 > > }
-> > ![delete Page](/assests/images/deleteblog.png)
+
+![delete Page](/assests/images/deleteblog.png)
 
 ## NPM Packages Description
 
